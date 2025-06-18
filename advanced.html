@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced CSS</title>
+  <style>
+    :root {
+      --main-color: #4CAF50;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    .animated-box {
+      width: 200px;
+      height: 200px;
+      background-color: var(--main-color);
+      animation: rotateBox 2s infinite;
+      margin: 50px auto;
+    }
+    @keyframes rotateBox {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-box"></div>
+</body>
+</html>
